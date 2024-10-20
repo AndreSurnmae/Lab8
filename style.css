@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #e8e8e8;
+  border: 50px double hsla(199, 100%, 25%, 1);
+}
+header {
+  background: linear-gradient(
+    360deg,
+    hsla(190, 67%, 43%, 1) 0%,
+    hsla(199, 100%, 25%, 1) 100%
+  );
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  margin: 10px 15px 10px 15px;
+}
+header h1 {
+  font-size: 55px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+header h2 {
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+.cat-section {
+  background-color: hsla(190, 67%, 43%, 1);
+  border-radius: 15px;
+  margin: 10px 15px 10px 15px;
+  height: fit-content;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.cat-section img {
+  max-width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.cat-section p {
+  font-size: 23.5px;
+  margin: 30px 200px 30px 200px;
+  line-height: 35px;
+}
+.cat-section button {
+  padding: 20px 20px;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: hsla(199, 100%, 25%, 1);
+  transition: 0.25s;
+}
+.cat-section button:hover {
+  opacity: 0.75;
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  header h1 {
+    font-size: 55px;
+  }
+  header h2 {
+    font-size: 40px;
+  }
+  .cat-section img {
+    max-width: 650px;
+    height: auto;
+  }
+  .cat-section p {
+    font-size: 35px;
+    margin: 30px 50px 30px 50px;
+  }
+  .cat-section button {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  body {
+    border-width: 35px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  header h2 {
+    font-size: 30px;
+  }
+  .cat-section img {
+    max-width: 500px;
+    height: auto;
+  }
+  .cat-section p {
+    font-size: 20px;
+    margin: 30px 50px 30px 50px;
+  }
+  .cat-section button {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header h1 {
+    font-size: 30px;
+  }
+  header h2 {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .cat-section img {
+    max-width: 150px;
+    height: auto;
+  }
+  .cat-section p {
+    font-size: 20px;
+    margin: 30px 20px 30px 20px;
+  }
+  .cat-section button {
+    font-size: 20px;
+  }
+}
